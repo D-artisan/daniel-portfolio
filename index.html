@@ -4,85 +4,93 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Daniel Nti Boakye | Professional Journey</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    /* Gradient text for brand style */
-    .gradient-text {
-      background: linear-gradient(to right, #00F260, #0575E6);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    /* Justify paragraphs using inline CSS (Tailwind doesn't include 'text-justify' by default) */
-    .justify-text {
-      text-align: justify;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <!-- Consider adding Google Fonts link here if needed -->
 </head>
-<body class="bg-gray-900 text-white font-sans">
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-brand">Daniel Nti Boakye</a>
+      <ul class="nav-links">
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#journey">Journey</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
 
   <!-- Hero Section -->
-<section class="min-h-screen flex flex-col justify-center items-center text-center px-6 py-10">
-  <h1 class="text-4xl md:text-6xl font-extrabold gradient-text mb-4">
-    Meet Daniel Nti Boakye
-  </h1>
-  <h2 class="text-lg md:text-xl text-gray-300 mb-6">
-    Software Craftsman • DevOps & Cloud Specialist • AI Strategist
-  </h2>
-  <div class="bg-gray-800/80 rounded-xl shadow-lg p-6 md:p-8 mt-6 max-w-4xl">
-    <p class="text-md md:text-lg text-gray-300 leading-relaxed mb-4 text-justify">
-      I am a skilled Software and DevOps Engineer with hands-on expertise in cloud technologies like Amazon Web Services and Microsoft Azure. 
-    </p>
-    <p class="text-md md:text-lg text-gray-300 leading-relaxed mb-4 text-justify">
-      From building resilient CI/CD pipelines to mentoring future coders, I bring impactful solutions that transform teams and technologies.
-    </p>
-    <p class="text-md md:text-lg text-gray-300 leading-relaxed mb-4 text-justify">
-      With a solid foundation in Java, Scala, and Python, I develop robust and scalable software systems that power real-world applications. My work integrates DevOps best practices with intelligent automation, enabling fast, secure, and reliable software delivery.
-    </p>
-    <p class="text-md md:text-lg text-gray-300 leading-relaxed mb-4 text-justify">
-      Recently, I completed an MSc in Artificial Intelligence with Business Strategy, and I’m actively applying data science, machine learning algorithms, and advanced analytics to solve business challenges. I build intelligent systems that not only handle complex data workflows but also deliver actionable insights that drive strategic decisions.
-    </p>
-    <p class="text-md md:text-lg text-gray-300 leading-relaxed text-justify">
-      By leveraging my experience across Software Engineering, DevOps, and AI, I consistently deliver cloud-native solutions that are scalable, efficient, and impactful—pushing technology forward while keeping people and purpose at the centre.
-    </p>
-  </div>  
-</section>
-
-
+  <section id="hero" class="hero-section">
+    <div class="container">
+      <h1 class="hero-title">
+        Meet Daniel Nti Boakye
+      </h1>
+      <h2 class="hero-subtitle">
+        Software Craftsman • DevOps & Cloud Specialist • AI Strategist
+      </h2>
+      <div class="hero-intro">
+        <p>
+          I am a skilled Software and DevOps Engineer with hands-on expertise in cloud technologies like Amazon Web Services and Microsoft Azure. 
+        </p>
+        <p>
+          From building resilient CI/CD pipelines to mentoring future coders, I bring impactful solutions that transform teams and technologies.
+        </p>
+        <p>
+          With a solid foundation in Java, Scala, and Python, I develop robust and scalable software systems that power real-world applications. My work integrates DevOps best practices with intelligent automation, enabling fast, secure, and reliable software delivery.
+        </p>
+        <p>
+          Recently, I completed an MSc in Artificial Intelligence with Business Strategy, and I’m actively applying data science, machine learning algorithms, and advanced analytics to solve business challenges. I build intelligent systems that not only handle complex data workflows but also deliver actionable insights that drive strategic decisions.
+        </p>
+        <p>
+          By leveraging my experience across Software Engineering, DevOps, and AI, I consistently deliver cloud-native solutions that are scalable, efficient, and impactful—pushing technology forward while keeping people and purpose at the centre.
+        </p>
+      </div>
+    </div>  
+  </section>
 
   <!-- Technical Skills -->
-  <section class="px-6 py-12 bg-gray-800/90">
-    <div class="max-w-6xl mx-auto">
-      <h2 class="text-3xl font-bold mb-6 text-center">My Tech Arsenal</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-gray-300">
-        <div class="space-y-2">
+  <section id="skills" class="skills-section">
+    <div class="container">
+      <h2>My Tech Arsenal</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
           <p><strong>Programming:</strong> Scala, Java, Python (pandas, NumPy, scikit-learn), SQL</p>
           <p><strong>Cloud Platforms:</strong> AWS, Azure, Linode, Google Cloud</p>
-          <p><strong>Infrastructure &amp; Automation:</strong> Docker, Kubernetes, Helm, Terraform, Ansible, CloudFormation</p>
+          <p><strong>Infrastructure & Automation:</strong> Docker, Kubernetes, Helm, Terraform, Ansible, CloudFormation</p>
         </div>
-        <div class="space-y-2">
-          <p><strong>Databases &amp; Storage:</strong> PostgreSQL, MongoDB, Redis, JOOQ</p>
-          <p><strong>Monitoring &amp; Logging:</strong> Grafana, Prometheus, Splunk, Zookeeper, Sockeye</p>
+        <div class="skill-category">
+          <p><strong>Databases & Storage:</strong> PostgreSQL, MongoDB, Redis, JOOQ</p>
+          <p><strong>Monitoring & Logging:</strong> Grafana, Prometheus, Splunk, Zookeeper, Sockeye</p>
           <p><strong>Development Tools:</strong> Git, Jupyter, CI/CD (Jenkins, CircleCI)</p>
-          <p><strong>Operating Systems:</strong> Linux (Ubuntu, CentOS)</p>
+          <p><strong>Operating Systems:</strong> Linux (Ubuntu, CentOS), Windows, MacOS</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Professional Journey Timeline -->
-  <section class="px-6 py-12 bg-gradient-to-b from-black via-gray-900 to-black relative">
-    <div class="max-w-5xl mx-auto">
-      <h2 class="text-4xl font-bold text-center mb-8">My Professional Journey</h2>
-      <div class="border-l border-gray-700 relative">
+  <section id="journey" class="journey-section">
+    <div class="container">
+      <h2>My Professional Journey</h2>
+      <div class="timeline">
 
         <!-- Role 1: Software Developer L3 -->
-        <div class="mb-10 ml-4">
-          <div class="absolute -left-1.5 mt-2.5 rounded-full bg-blue-500 w-3 h-3"></div>
-          <div class="bg-gray-800 p-6 rounded-xl shadow-lg">
-            <h3 class="text-2xl font-semibold mb-4 gradient-text">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>
               Software Developer L3
             </h3>
-            <p class="text-gray-200 leading-relaxed justify-text">
+            <p>
               When I moved into this environment, deployments were manual, time-consuming,
               and error-prone. Within my first month, I introduced a secure Jenkins CI/CD pipeline
               with a master-agent setup on on-premises systems. By configuring Java 17, setting up
@@ -99,13 +107,13 @@
         </div>
 
         <!-- Role 2: Coding Instructor -->
-        <div class="mb-10 ml-4">
-          <div class="absolute -left-1.5 mt-2.5 rounded-full bg-green-500 w-3 h-3"></div>
-          <div class="bg-gray-800 p-6 rounded-xl shadow-lg">
-            <h3 class="text-2xl font-semibold mb-4 gradient-text">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>
               Coding Instructor
             </h3>
-            <p class="text-gray-200 leading-relaxed justify-text">
+            <p>
               In this role, I encountered many students who had never written a line of code before.
               I designed and delivered accessible courses in Python, Java, and web development,
               providing project-based experiences rooted in real-world examples. Over time, I helped
@@ -117,13 +125,13 @@
         </div>
 
         <!-- Role 3: DevOps Engineer -->
-        <div class="mb-10 ml-4">
-          <div class="absolute -left-1.5 mt-2.5 rounded-full bg-purple-500 w-3 h-3"></div>
-          <div class="bg-gray-800 p-6 rounded-xl shadow-lg">
-            <h3 class="text-2xl font-semibold mb-4 gradient-text">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>
               DevOps Engineer
             </h3>
-            <p class="text-gray-200 leading-relaxed justify-text">
+            <p>
               Facing complicated, shell-script-driven deployment workflows, I consolidated and
               refactored them into modular Scala applications, reducing technical debt and simplifying
               future maintenance. I also introduced proactive monitoring practices with Prometheus
@@ -135,13 +143,13 @@
         </div>
 
         <!-- Role 4: Software Engineer II -->
-        <div class="mb-10 ml-4">
-          <div class="absolute -left-1.5 mt-2.5 rounded-full bg-pink-500 w-3 h-3"></div>
-          <div class="bg-gray-800 p-6 rounded-xl shadow-lg">
-            <h3 class="text-2xl font-semibold mb-4 gradient-text">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>
               Software Engineer II
             </h3>
-            <p class="text-gray-200 leading-relaxed justify-text">
+            <p>
               My focus here was a real-time trading platform powered by Spring Boot, Redis,
               PostgreSQL, and Angular to handle low-latency, high-volume transactions. Working on
               backend logic and integrations, I improved responsiveness and reliability. Beyond code,
@@ -153,13 +161,13 @@
         </div>
 
         <!-- Earlier Experience -->
-        <div class="mb-10 ml-4">
-          <div class="absolute -left-1.5 mt-2.5 rounded-full bg-yellow-500 w-3 h-3"></div>
-          <div class="bg-gray-800 p-6 rounded-xl shadow-lg">
-            <h3 class="text-2xl font-semibold mb-4 gradient-text">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>
               Earlier Experiences
             </h3>
-            <p class="text-gray-200 leading-relaxed justify-text">
+            <p>
               In previous roles, I delivered cloud-based e-learning and eCommerce solutions,
               enhancing performance and security through optimised infrastructure and tailored
               security frameworks. I also planned and deployed scalable network solutions,
@@ -173,28 +181,36 @@
   </section>
 
   <!-- Projects & Volunteering -->
-  <section class="px-6 py-12 bg-gray-800/90">
-    <div class="max-w-6xl mx-auto">
-      <h2 class="text-3xl font-bold text-center mb-6">Projects &amp; Volunteering</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-gray-200">
-        <div class="space-y-4">
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <h2>Projects & Volunteering</h2>
+      <div class="projects-grid">
+        <div class="project-item">
           <p>
             <strong>Infrastructure as Code:</strong> Automated AWS provisioning with CloudFormation, ensuring scalable and consistent environments.
           </p>
+        </div>
+        <div class="project-item">
           <p>
-            <strong>CI/CD Automation:</strong> Built deployment pipelines with Ansible &amp; CircleCI, integrating comprehensive monitoring for operational stability.
+            <strong>CI/CD Automation:</strong> Built deployment pipelines with Ansible & CircleCI, integrating comprehensive monitoring for operational stability.
           </p>
+        </div>
+        <div class="project-item">
           <p>
             <strong>Scalable Microservices:</strong> Deployed ML-driven services on Kubernetes with built-in resilience and autoscaling.
           </p>
         </div>
-        <div class="space-y-4">
+        <div class="project-item">
           <p>
             <strong>AI Chatbot:</strong> Created a chatbot using Google Cloud’s Agent Builder for intelligent query handling and automation.
           </p>
+        </div>
+        <div class="project-item">
           <p>
             <strong>Social Navigation Metric:</strong> Developed a metric for autonomous robots to make decisions in human-aware environments.
           </p>
+        </div>
+        <div class="project-item">
           <p>
             <strong>Community Engagement:</strong> Led a cloud computing careers webinar for ALX Africa’s Meet Webinar Series, offering practical insights into the field.
           </p>
@@ -204,23 +220,23 @@
   </section>
 
   <!-- Education -->
-  <section class="px-6 py-12 bg-black/80">
-    <div class="max-w-5xl mx-auto">
-      <h2 class="text-3xl font-bold text-center mb-8">Education &amp; Certifications</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-gray-200">
-        <div class="bg-gray-900 p-6 rounded-xl shadow-lg">
-          <h3 class="text-xl font-semibold">MSc in AI with Business Strategy</h3>
-          <p class="text-gray-400 text-sm mt-1">Aston University</p>
-          <ul class="list-disc list-inside mt-3 space-y-2">
+  <section id="education" class="education-section">
+    <div class="container">
+      <h2>Education & Certifications</h2>
+      <div class="education-grid">
+        <div class="education-item">
+          <h3>MSc in AI with Business Strategy</h3>
+          <p class="institution">Aston University</p>
+          <ul>
             <li>Machine Learning, Data Analysis, Data Visualisation</li>
             <li>Leadership: International Students’ Officer, Aston Students’ Union</li>
           </ul>
         </div>
-        <div class="bg-gray-900 p-6 rounded-xl shadow-lg">
-          <h3 class="text-xl font-semibold">BSc in Telecommunications Engineering</h3>
-          <p class="text-gray-400 text-sm mt-1">Ghana Communication Technology University</p>
-          <ul class="list-disc list-inside mt-3 space-y-2">
-            <li>First Class Honours • Core modules: Computer Programming, Algorithms &amp; Data Structures</li>
+        <div class="education-item">
+          <h3>BSc in Telecommunications Engineering</h3>
+          <p class="institution">Ghana Communication Technology University</p>
+          <ul>
+            <li>First Class Honours • Core modules: Computer Programming, Algorithms & Data Structures</li>
             <li>Leadership: Welfare Committee Chairperson, S.R.C.</li>
           </ul>
         </div>
@@ -229,10 +245,10 @@
   </section>
 
   <!-- Interests -->
-  <section class="px-6 py-12 bg-gray-900">
-    <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-6">Beyond the Code</h2>
-      <p class="text-gray-300 leading-relaxed justify-text">
+  <section id="interests" class="interests-section"> <!-- Added ID here too, just in case -->
+    <div class="container">
+      <h2>Beyond the Code</h2>
+      <p class="interests-list">
         Technology Strategy, DevOps, AI Systems, Public Speaking, Writing, Mentoring,
         Reading, Guitar, Fitness
       </p>
@@ -240,76 +256,93 @@
   </section>
 
   <!-- Contact / CTA -->
-  <section class="px-6 py-12 text-center">
-    <h2 class="text-3xl font-bold mb-4">Get in Touch</h2>
-    <p class="text-gray-400 mb-6 max-w-2xl mx-auto leading-relaxed justify-text">
-      If you are looking for someone to drive technical excellence, foster innovation,
-      and elevate engineering culture, let’s connect!
-    </p>
-    <div class="flex justify-center gap-8 mb-8">
-      <!-- GitHub -->
-      <a
-        href="https://github.com/D-artisan" 
-        target="_blank"
-        class="flex items-center text-gray-200 hover:text-gray-300 transition-transform transform hover:scale-105"
-      >
-        <!-- GitHub Icon -->
-        <svg
-          aria-hidden="true"
-          class="w-5 h-5 mr-2 fill-current"
-          viewBox="0 0 16 16"
-        >
-          <path d="M8 0C3.58 0 0 3.77 0 8.43c0 3.73 2.39 6.88 5.7 8 .42.08.58-.19.58-.42 0-.2-.01-.87-.01-1.58-1.88.41-2.41-.8-2.41-.8C3.49 12.83 2.9 12.6 2.9 12.6c-.77-.54.06-.53.06-.53.85.06 1.3.89 1.3.89.76 1.36 2 0.97 2.49.74.08-.56.3-.97.55-1.2-1.5-.17-3.07-.78-3.07-3.47 0-.77.26-1.41.69-1.91-.07-.17-.3-.88.06-1.82 0 0 .57-.19 1.88.73a6.52 6.52 0 0 1 3.44 0c1.31-.92 1.88-.73 1.88-.73.36.94.13 1.65.06 1.82.43.5.69 1.14.69 1.91 0 2.69-1.57 3.3-3.07 3.47.3.27.57.8.57 1.61 0 1.16-.01 2.1-.01 2.39 0 .23.16.51.58.42A8.45 8.45 0 0 0 16 8.43C16 3.77 12.42 0 8 0z"/>
-        </svg>
-        GitHub
-      </a>
-      <!-- LinkedIn -->
-      <a
-        href="https://www.linkedin.com/in/danielnb/"
-        target="_blank"
-        class="flex items-center text-blue-400 hover:text-blue-300 transition-transform transform hover:scale-105"
-      >
-        <!-- LinkedIn Icon -->
-        <svg
-          aria-hidden="true"
-          class="w-5 h-5 mr-2 fill-current"
-          viewBox="0 0 24 24"
-        >
-          <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76
-           2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11.7
-           19.4h-2.6v-8.8h2.6v8.8zm-1.3-10c-.84 0-1.5-.66-1.5-1.5s.66-1.5
-           1.5-1.5 1.5.66 1.5 1.5-.67 1.5-1.5 1.5zm12.3 10h-2.6v-4.3c0-1.03
-           0-2.3-1.4-2.3-1.4 0-1.6 1.09-1.6 2.2v4.4h-2.6v-8.8h2.5v1.2h.04c.35-.66
-           1.2-1.3 2.4-1.3 2.6 0 3.1 1.7 3.1 3.9v5z"/>
-        </svg>
-        LinkedIn
-      </a>
-      <!-- Email -->
-      <a
-        href="mailto:daniel.nti.boakye@gmail.com"
-        target="_blank"
-        class="flex items-center text-green-400 hover:text-green-300 transition-transform transform hover:scale-105"
-      >
-        <!-- Email Icon (Envelope) -->
-        <svg
-          aria-hidden="true"
-          class="w-5 h-5 mr-2 fill-current"
-          viewBox="0 0 512 512"
-        >
-          <path d="M467 61H45C20.24 61 0 81.24 0 106v300c0 24.76 
-           20.24 45 45 45h422c24.76 0 45-20.24 45-45V106c0-24.76-20.24-45-45-45zm
-           0 30l-211 181.63L45 91h422zM45 421V121l207.47 178.59a15 15 0 0 0 
-           19.07 0L467 121v300H45z"/>
-        </svg>
-        Email
-      </a>
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2>Get in Touch</h2>
+      <p class="contact-message">
+        If you are looking for someone to drive technical excellence, foster innovation,
+        and elevate engineering culture, let’s connect!
+      </p>
+      <div class="contact-links">
+        <!-- GitHub -->
+        <a href="https://github.com/D-artisan" target="_blank" rel="noopener" class="contact-link github">
+          <svg aria-hidden="true" viewBox="0 0 16 16" width="24" height="24">
+            <path fill="currentColor" d="M8 0C3.58 0 0 3.77 0 8.43c0 3.73 2.39 6.88 5.7 8 .42.08.58-.19.58-.42 0-.2-.01-.87-.01-1.58-1.88.41-2.41-.8-2.41-.8C3.49 12.83 2.9 12.6 2.9 12.6c-.77-.54.06-.53.06-.53.85.06 1.3.89 1.3.89.76 1.36 2 0.97 2.49.74.08-.56.3-.97.55-1.2-1.5-.17-3.07-.78-3.07-3.47 0-.77.26-1.41.69-1.91-.07-.17-.3-.88.06-1.82 0 0 .57-.19 1.88.73a6.52 6.52 0 0 1 3.44 0c1.31-.92 1.88-.73 1.88-.73.36.94.13 1.65.06 1.82.43.5.69 1.14.69 1.91 0 2.69-1.57 3.3-3.07 3.47.3.27.57.8.57 1.61 0 1.16-.01 2.1-.01 2.39 0 .23.16.51.58.42A8.45 8.45 0 0 0 16 8.43C16 3.77 12.42 0 8 0z"/>
+          </svg>
+          <span>GitHub</span>
+        </a>
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/danielnb/" target="_blank" rel="noopener" class="contact-link linkedin">
+          <svg aria-hidden="true" viewBox="0 0 24 24" width="24" height="24">
+             <path fill="currentColor" d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11.7 19.4h-2.6v-8.8h2.6v8.8zm-1.3-10c-.84 0-1.5-.66-1.5-1.5s.66-1.5 1.5-1.5 1.5.66 1.5 1.5-.67 1.5-1.5 1.5zm12.3 10h-2.6v-4.3c0-1.03 0-2.3-1.4-2.3-1.4 0-1.6 1.09-1.6 2.2v4.4h-2.6v-8.8h2.5v1.2h.04c.35-.66 1.2-1.3 2.4-1.3 2.6 0 3.1 1.7 3.1 3.9v5z"/>
+          </svg>
+          <span>LinkedIn</span>
+        </a>
+        <!-- Email -->
+        <a href="mailto:daniel.nti.boakye@gmail.com" target="_blank" class="contact-link email">
+          <svg aria-hidden="true" viewBox="0 0 512 512" width="24" height="24">
+            <path fill="currentColor" d="M467 61H45C20.24 61 0 81.24 0 106v300c0 24.76 20.24 45 45 45h422c24.76 0 45-20.24 45-45V106c0-24.76-20.24-45-45-45zm0 30l-211 181.63L45 91h422zM45 421V121l207.47 178.59a15 15 0 0 0 19.07 0L467 121v300H45z"/>
+          </svg>
+          <span>Email</span>
+        </a>
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="py-4 text-center text-gray-500 text-sm">
-    © 2025 Daniel Nti Boakye. Made with Tailwind &amp; Passion.
+  <footer class="footer-content">
+    © 2025 Daniel Nti Boakye. Made with Passion. <!-- Removed Tailwind ref -->
   </footer>
+
+  <script>
+    // Basic mobile nav toggle
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      navToggle.classList.toggle('active'); 
+    });
+
+    // Close nav when a link is clicked (for single-page apps)
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        navToggle.classList.remove('active');
+      });
+    });
+
+    // Add smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                // Calculate position considering potential fixed navbar height
+                const navbarHeight = document.querySelector('.navbar')?.offsetHeight || 0;
+                const elementPosition = targetElement.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - navbarHeight;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: "smooth"
+                });
+            }
+        });
+    });
+
+    // Optional: Add shadow to navbar on scroll
+    const navbar = document.querySelector('.navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+  </script>
 
 </body>
 </html>
