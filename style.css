@@ -121,9 +121,169 @@ footer {
   }
   section {
     padding: 3rem 1rem;
-  }
+    }
 }
 
+
+/* === Navigation Bar === */
+html {
+    scroll-padding-top: 70px; /* Adjust based on navbar height */
+}
+
+.navbar {
+    background-color: rgba(18, 18, 18, 0.85); /* Semi-transparent dark */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    border-bottom: 1px solid var(--surface-color);
+    padding: 0.8rem 0;
+    position: fixed; /* Stick to the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it's above other content */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar.scrolled {
+    background-color: rgba(18, 18, 18, 0.95); /* More opaque on scroll */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px; /* Match section max-width */
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.nav-brand {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--text-color);
+    text-decoration: none;
+}
+.nav-brand:hover {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem; /* Space between links */
+}
+
+.nav-links a {
+    color: var(--text-muted-color);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 0; /* Add padding for easier clicking */
+    position: relative; /* For underline effect */
+    transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active { /* Style for active link (needs JS) */
+    color: var(--primary-color);
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+
+/* === Mobile Navigation Toggle (Hamburger) === */
+.nav-toggle {
+    display: none; /* Hidden by default */
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.nav-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: var(--text-color);
+    margin: 5px 0;
+    border-radius: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Hamburger animation */
+.nav-toggle.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+.nav-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+.nav-toggle.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+
+/* === Responsive Navigation === */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide links by default */
+        flex-direction: column;
+        position: absolute;
+        top: 100%; /* Position below navbar */
+        left: 0;
+        width: 100%;
+        background-color: rgba(30, 30, 30, 0.98); /* Slightly different background */
+        padding: 1rem 0;
+        text-align: center;
+        border-top: 1px solid var(--surface-color);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-links.active {
+        display: flex; /* Show when active */
+    }
+
+    .nav-links li {
+        padding: 0.8rem 1rem;
+    }
+
+    .nav-links a {
+        color: var(--text-color); /* Ensure visibility on dark background */
+        width: 100%;
+        display: block;
+    }
+     .nav-links a:hover {
+        color: var(--primary-color);
+    }
+    .nav-links a::after { /* Remove underline effect on mobile */
+        display: none;
+    }
+
+    .nav-toggle {
+        display: block; /* Show hamburger */
+    }
+
+    /* Adjust body padding to prevent content from hiding under fixed nav */
+    body {
+        padding-top: 70px; /* Match navbar height + padding */
+    }
+    html {
+        scroll-padding-top: 70px; /* Ensure scroll stops below nav */
+    }
+}
 /* === Hero Section === */
 .hero-section {
   min-height: 80vh; /* Adjust as needed */
