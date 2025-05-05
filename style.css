@@ -39,6 +39,7 @@ h1 {
   font-size: 2.5rem; /* Responsive adjustments later */
   background: var(--gradient);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
 }
@@ -132,8 +133,8 @@ html {
 
 .navbar {
     background-color: rgba(18, 18, 18, 0.85); /* Semi-transparent dark */
-    backdrop-filter: blur(10px); /* Frosted glass effect */
     -webkit-backdrop-filter: blur(10px); /* Safari support */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
     border-bottom: 1px solid var(--surface-color);
     padding: 0.8rem 0;
     position: fixed; /* Stick to the top */
@@ -421,6 +422,7 @@ html {
 .timeline-content h3 {
     background: var(--gradient);
     -webkit-background-clip: text;
+    background-clip: text; /* Standard property for compatibility */
     -webkit-text-fill-color: transparent;
     display: inline-block; /* Fit content width */
 }
