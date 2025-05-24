@@ -1,348 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Daniel Nti Boakye | Professional Journey</title>
-  <link rel="stylesheet" href="style.css">
-  <!-- Consider adding Google Fonts link here if needed -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daniel Nti Boakye | Cloud & AI Solutions Engineer</title>
+<meta name="description" content="Portfolio of Daniel Nti Boakye, Cloud & AI Solutions Engineer skilled in AWS, LangChain, Flutter, Kubernetes and Terraform.">
+<meta property="og:title" content="Daniel Nti Boakye Portfolio">
+<meta property="og:description" content="Cloud & AI Solutions Engineer">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://example.com">
+<meta name="twitter:card" content="summary_large_image">
+<!-- OpenGraph videos -->
+<meta property="og:video" content="project-demos/chatbot.mkv">
+<meta property="og:video" content="project-demos/Demo - AI Fiber Planner.mp4">
+<meta property="og:video" content="project-demos/Demo - Scripter App - Made with Clipchamp.mp4">
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+/* Critical custom styles */
+html{scroll-behavior:smooth}
+.modal{transition:opacity .3s}
+.modal.hidden{opacity:0;pointer-events:none}
+</style>
 </head>
-<body>
+<body class="bg-gray-50 text-gray-900">
+<!-- HERO SECTION -->
+<header class="min-h-screen flex flex-col items-center justify-center text-center bg-gradient-to-b from-sky-700 to-sky-900 text-white p-4">
+  <h1 class="text-4xl sm:text-5xl font-bold mb-4">Daniel Nti Boakye</h1>
+  <p class="text-xl sm:text-2xl mb-8">Cloud & AI Solutions Engineer</p>
+  <p class="max-w-xl mb-8">Expertise across <strong>AWS</strong>, <strong>LangChain</strong>, <strong>Flutter</strong>, <strong>Kubernetes</strong> and <strong>Terraform</strong> to deliver impactful solutions.</p>
+  <a href="#projects" class="bg-white text-sky-700 px-6 py-3 rounded-full shadow font-semibold hover:bg-sky-50">See My Work</a>
+</header>
 
-  <!-- Navigation Bar -->
-  <nav class="navbar">
-    <div class="container nav-container">
-      <a href="#hero" class="nav-brand">Daniel Nti Boakye</a>
-      <ul class="nav-links">
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#journey">Journey</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <button class="nav-toggle" aria-label="Toggle navigation">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section id="hero" class="hero-section">
-    <div class="container">
-      <h1 class="hero-title">
-        Meet Daniel Nti Boakye
-      </h1>
-      <h2 class="hero-subtitle">
-        Software Craftsman • DevOps & Cloud Specialist • AI Strategist
-      </h2>
-      <div class="hero-intro">
-        <p>
-          I am a skilled Software and DevOps Engineer with hands-on expertise in cloud technologies like Amazon Web Services and Microsoft Azure. 
-        </p>
-        <p>
-          From building resilient CI/CD pipelines to mentoring future coders, I bring impactful solutions that transform teams and technologies.
-        </p>
-        <p>
-          With a solid foundation in Java, Scala, and Python, I develop robust and scalable software systems that power real-world applications. My work integrates DevOps best practices with intelligent automation, enabling fast, secure, and reliable software delivery.
-        </p>
-        <p>
-          Recently, I completed an MSc in Artificial Intelligence with Business Strategy, and I’m actively applying data science, machine learning algorithms, and advanced analytics to solve business challenges. I build intelligent systems that not only handle complex data workflows but also deliver actionable insights that drive strategic decisions.
-        </p>
-        <p>
-          By leveraging my experience across Software Engineering, DevOps, and AI, I consistently deliver cloud-native solutions that are scalable, efficient, and impactful—pushing technology forward while keeping people and purpose at the centre.
-        </p>
+<!-- PROJECTS GRID -->
+<section id="projects" class="py-16 px-4">
+  <h2 class="text-3xl font-semibold text-center mb-12">Featured Projects</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <!-- Project: Local AI Chatbot -->
+    <button class="relative group focus:outline-none" data-project="chatbot">
+      <div class="aspect-w-16 aspect-h-9 bg-gray-200 rounded-lg overflow-hidden">
+        <video width="320" height="180" class="w-full h-full object-cover" muted loop playsinline preload="metadata" aria-label="Local AI Chatbot demo" data-src="project-demos/chatbot.mkv"></video>
       </div>
-    </div>  
-  </section>
-
-  <!-- Technical Skills -->
-  <section id="skills" class="skills-section">
-    <div class="container">
-      <h2>My Tech Arsenal</h2>
-      <div class="skills-grid">
-        <div class="skill-category">
-          <p><strong>Programming:</strong> Scala, Java, Python (pandas, NumPy, scikit-learn), SQL</p>
-          <p><strong>Cloud Platforms:</strong> AWS, Azure, Linode, Google Cloud</p>
-          <p><strong>Infrastructure & Automation:</strong> Docker, Kubernetes, Helm, Terraform, Ansible, CloudFormation</p>
-        </div>
-        <div class="skill-category">
-          <p><strong>Databases & Storage:</strong> PostgreSQL, MongoDB, Redis, JOOQ</p>
-          <p><strong>Monitoring & Logging:</strong> Grafana, Prometheus, Splunk, Zookeeper, Sockeye</p>
-          <p><strong>Development Tools:</strong> Git, Jupyter, CI/CD (Jenkins, CircleCI)</p>
-          <p><strong>Operating Systems:</strong> Linux (Ubuntu, CentOS), Windows, MacOS</p>
-        </div>
+      <figcaption class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex flex-col justify-end p-4 text-white">
+        <h3 class="text-lg font-semibold">Local AI Chatbot</h3>
+        <p class="text-sm">Automates helpdesk answers with on-device GPT</p>
+      </figcaption>
+    </button>
+    <!-- Project: Fibre Planner AI -->
+    <button class="relative group focus:outline-none" data-project="fibre">
+      <div class="aspect-w-16 aspect-h-9 bg-gray-200 rounded-lg overflow-hidden">
+        <video width="320" height="180" class="w-full h-full object-cover" muted loop playsinline preload="metadata" aria-label="Fibre Planner AI demo" data-src="project-demos/Demo - AI Fiber Planner.mp4"></video>
       </div>
-    </div>
-  </section>
-
-  <!-- Professional Journey Timeline -->
-  <section id="journey" class="journey-section">
-    <div class="container">
-      <h2>My Professional Journey</h2>
-      <div class="timeline">
-
-        <!-- Role 1: Software Developer L3 -->
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h3>
-              Software Developer L3
-            </h3>
-            <p>
-              When I moved into this environment, deployments were manual, time-consuming,
-              and error-prone. Within my first month, I introduced a secure Jenkins CI/CD pipeline
-              with a master-agent setup on on-premises systems. By configuring Java 17, setting up
-              RSA key-based SSH access, and integrating agents via the Jenkins UI, I automated builds
-              and greatly improved release reliability.
-
-              I also engineered a dynamic Scala-based reporting tool leveraging JOOQ, Spring,
-              and Apache Camel/Quartz to produce comprehensive, schema-aware CSV reports across
-              multiple data views. With configurable scheduling, feature toggles, and Docker-based
-              local testing, it enhanced data accessibility and brought greater transparency
-              to system operations.
-            </p>
-          </div>
-        </div>
-
-        <!-- Role 2: Coding Instructor -->
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h3>
-              Coding Instructor
-            </h3>
-            <p>
-              In this role, I encountered many students who had never written a line of code before.
-              I designed and delivered accessible courses in Python, Java, and web development,
-              providing project-based experiences rooted in real-world examples. Over time, I helped
-              learners not only build and deploy their first applications but also guided them
-              towards internships and junior developer opportunities, watching them flourish in
-              collaborative learning environments.
-            </p>
-          </div>
-        </div>
-
-        <!-- Role 3: DevOps Engineer -->
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h3>
-              DevOps Engineer
-            </h3>
-            <p>
-              Facing complicated, shell-script-driven deployment workflows, I consolidated and
-              refactored them into modular Scala applications, reducing technical debt and simplifying
-              future maintenance. I also introduced proactive monitoring practices with Prometheus
-              and Grafana, giving the team the visibility needed to promptly address performance
-              bottlenecks. By optimising CI/CD pipelines using Jenkins, Kubernetes, and Docker,
-              we significantly cut deployment overhead and improved overall system reliability.
-            </p>
-          </div>
-        </div>
-
-        <!-- Role 4: Software Engineer II -->
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h3>
-              Software Engineer II
-            </h3>
-            <p>
-              My focus here was a real-time trading platform powered by Spring Boot, Redis,
-              PostgreSQL, and Angular to handle low-latency, high-volume transactions. Working on
-              backend logic and integrations, I improved responsiveness and reliability. Beyond code,
-              I regularly mentored junior developers in Java fundamentals and Git best practices,
-              and contributed articles to an internal newsletter—fostering a learning culture that
-              uplifted the engineering team.
-            </p>
-          </div>
-        </div>
-
-        <!-- Earlier Experience -->
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h3>
-              Earlier Experiences
-            </h3>
-            <p>
-              In previous roles, I delivered cloud-based e-learning and eCommerce solutions,
-              enhancing performance and security through optimised infrastructure and tailored
-              security frameworks. I also planned and deployed scalable network solutions,
-              collaborating with field engineers to ensure timely, high-quality implementations.
-            </p>
-          </div>
-        </div>
-
+      <figcaption class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex flex-col justify-end p-4 text-white">
+        <h3 class="text-lg font-semibold">Fibre Planner AI</h3>
+        <p class="text-sm">Speeds up fibre network planning 30%</p>
+      </figcaption>
+    </button>
+    <!-- Project: Scripter App (Flutter) -->
+    <button class="relative group focus:outline-none" data-project="scripter">
+      <div class="aspect-w-16 aspect-h-9 bg-gray-200 rounded-lg overflow-hidden">
+        <video width="320" height="180" class="w-full h-full object-cover" muted loop playsinline preload="metadata" aria-label="Scripter App demo" data-src="project-demos/Demo - Scripter App - Made with Clipchamp.mp4"></video>
       </div>
-    </div>
-  </section>
+      <figcaption class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex flex-col justify-end p-4 text-white">
+        <h3 class="text-lg font-semibold">Scripter App</h3>
+        <p class="text-sm">Mobile-first screenplay writing</p>
+      </figcaption>
+    </button>
+    <!-- Project: Cross-Poster Platform -->
+    <button class="relative group focus:outline-none" data-project="crossposter">
+      <div class="aspect-w-16 aspect-h-9 flex items-center justify-center bg-orange-100 text-6xl rounded-lg" role="img" aria-label="Cross-Poster Platform thumbnail">✍️</div>
+      <figcaption class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex flex-col justify-end p-4 text-white">
+        <h3 class="text-lg font-semibold">Cross-Poster Platform</h3>
+        <p class="text-sm">One click to share writing everywhere</p>
+      </figcaption>
+    </button>
+    <!-- Project: Offline KB LLM -->
+    <button class="relative group focus:outline-none" data-project="offline">
+      <div class="aspect-w-16 aspect-h-9 flex items-center justify-center bg-green-100 text-6xl rounded-lg" role="img" aria-label="Offline KB LLM thumbnail">📚</div>
+      <figcaption class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex flex-col justify-end p-4 text-white">
+        <h3 class="text-lg font-semibold">Offline KB LLM</h3>
+        <p class="text-sm">Ask questions offline with local LLM</p>
+      </figcaption>
+    </button>
+  </div>
+</section>
 
-  <!-- Projects & Volunteering -->
-  <section id="projects" class="projects-section">
-    <div class="container">
-      <h2>Projects & Volunteering</h2>
-      <div class="projects-grid">
-        <div class="project-item">
-          <p>
-            <strong>Infrastructure as Code:</strong> Automated AWS provisioning with CloudFormation, ensuring scalable and consistent environments.
-          </p>
-        </div>
-        <div class="project-item">
-          <p>
-            <strong>CI/CD Automation:</strong> Built deployment pipelines with Ansible & CircleCI, integrating comprehensive monitoring for operational stability.
-          </p>
-        </div>
-        <div class="project-item">
-          <p>
-            <strong>Scalable Microservices:</strong> Deployed ML-driven services on Kubernetes with built-in resilience and autoscaling.
-          </p>
-        </div>
-        <div class="project-item">
-          <p>
-            <strong>AI Chatbot:</strong> Created a chatbot using Google Cloud’s Agent Builder for intelligent query handling and automation.
-          </p>
-        </div>
-        <div class="project-item">
-          <p>
-            <strong>Social Navigation Metric:</strong> Developed a metric for autonomous robots to make decisions in human-aware environments.
-          </p>
-        </div>
-        <div class="project-item">
-          <p>
-            <strong>Community Engagement:</strong> Led a cloud computing careers webinar for ALX Africa’s Meet Webinar Series, offering practical insights into the field.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
+<!-- MODAL TEMPLATE -->
+<div id="modal" class="modal fixed inset-0 bg-black/70 flex items-center justify-center p-4 hidden" aria-modal="true" role="dialog">
+  <div class="bg-white rounded-lg shadow-lg max-w-xl w-full relative">
+    <button id="closeModal" class="absolute top-2 right-2 text-gray-600 text-2xl" aria-label="Close modal">&times;</button>
+    <div id="modalContent" class="p-4"></div>
+  </div>
+</div>
 
-  <!-- Education -->
-  <section id="education" class="education-section">
-    <div class="container">
-      <h2>Education & Certifications</h2>
-      <div class="education-grid">
-        <div class="education-item">
-          <h3>MSc in AI with Business Strategy</h3>
-          <p class="institution">Aston University</p>
-          <ul>
-            <li>Machine Learning, Data Analysis, Data Visualisation</li>
-            <li>Leadership: International Students’ Officer, Aston Students’ Union</li>
-          </ul>
-        </div>
-        <div class="education-item">
-          <h3>BSc in Telecommunications Engineering</h3>
-          <p class="institution">Ghana Communication Technology University</p>
-          <ul>
-            <li>First Class Honours • Core modules: Computer Programming, Algorithms & Data Structures</li>
-            <li>Leadership: Welfare Committee Chairperson, S.R.C.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
+<!-- JSON-LD SCHEMA -->
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareSourceCode",
+    "name": "Local AI Chatbot",
+    "url": "https://github.com/D-artisan/local-ai-chatbot",
+    "programmingLanguage": "Python",
+    "description": "Automates helpdesk answers with on-device GPT"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareSourceCode",
+    "name": "Fibre Planner AI",
+    "url": "https://github.com/D-artisan/fibre-planner-ai",
+    "programmingLanguage": "Python",
+    "description": "Speeds up fibre network planning 30%"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareSourceCode",
+    "name": "Scripter App",
+    "url": "https://github.com/D-artisan/scripter-flutter",
+    "programmingLanguage": "Dart",
+    "description": "Mobile-first screenplay writing"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareSourceCode",
+    "name": "Cross-Poster Platform",
+    "url": "https://github.com/D-artisan/cross-poster-platform",
+    "programmingLanguage": "Node.js",
+    "description": "One click to share writing everywhere"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareSourceCode",
+    "name": "Offline KB LLM",
+    "url": "https://github.com/D-artisan/offline-kb-llm",
+    "programmingLanguage": "Python",
+    "description": "Ask questions offline with local LLM"
+  }
+]
+</script>
 
-  <!-- Interests -->
-  <section id="interests" class="interests-section"> <!-- Added ID here too, just in case -->
-    <div class="container">
-      <h2>Beyond the Code</h2>
-      <p class="interests-list">
-        Technology Strategy, DevOps, AI Systems, Public Speaking, Writing, Mentoring,
-        Reading, Guitar, Fitness
-      </p>
-    </div>
-  </section>
+<!-- SCRIPTS -->
+<script>
+// Lazy load videos with IntersectionObserver
+const videos = document.querySelectorAll('video[data-src]');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      const video = entry.target;
+      video.src = video.dataset.src;
+      observer.unobserve(video);
+    }
+  });
+});
+videos.forEach(v => observer.observe(v));
 
-  <!-- Contact / CTA -->
-  <section id="contact" class="contact-section">
-    <div class="container">
-      <h2>Get in Touch</h2>
-      <p class="contact-message">
-        If you are looking for someone to drive technical excellence, foster innovation,
-        and elevate engineering culture, let’s connect!
-      </p>
-      <div class="contact-links">
-        <!-- GitHub -->
-        <a href="https://github.com/D-artisan" target="_blank" rel="noopener" class="contact-link github">
-          <svg aria-hidden="true" viewBox="0 0 16 16" width="24" height="24">
-            <path fill="currentColor" d="M8 0C3.58 0 0 3.77 0 8.43c0 3.73 2.39 6.88 5.7 8 .42.08.58-.19.58-.42 0-.2-.01-.87-.01-1.58-1.88.41-2.41-.8-2.41-.8C3.49 12.83 2.9 12.6 2.9 12.6c-.77-.54.06-.53.06-.53.85.06 1.3.89 1.3.89.76 1.36 2 0.97 2.49.74.08-.56.3-.97.55-1.2-1.5-.17-3.07-.78-3.07-3.47 0-.77.26-1.41.69-1.91-.07-.17-.3-.88.06-1.82 0 0 .57-.19 1.88.73a6.52 6.52 0 0 1 3.44 0c1.31-.92 1.88-.73 1.88-.73.36.94.13 1.65.06 1.82.43.5.69 1.14.69 1.91 0 2.69-1.57 3.3-3.07 3.47.3.27.57.8.57 1.61 0 1.16-.01 2.1-.01 2.39 0 .23.16.51.58.42A8.45 8.45 0 0 0 16 8.43C16 3.77 12.42 0 8 0z"/>
-          </svg>
-          <span>GitHub</span>
-        </a>
-        <!-- LinkedIn -->
-        <a href="https://www.linkedin.com/in/danielnb/" target="_blank" rel="noopener" class="contact-link linkedin">
-          <svg aria-hidden="true" viewBox="0 0 24 24" width="24" height="24">
-             <path fill="currentColor" d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11.7 19.4h-2.6v-8.8h2.6v8.8zm-1.3-10c-.84 0-1.5-.66-1.5-1.5s.66-1.5 1.5-1.5 1.5.66 1.5 1.5-.67 1.5-1.5 1.5zm12.3 10h-2.6v-4.3c0-1.03 0-2.3-1.4-2.3-1.4 0-1.6 1.09-1.6 2.2v4.4h-2.6v-8.8h2.5v1.2h.04c.35-.66 1.2-1.3 2.4-1.3 2.6 0 3.1 1.7 3.1 3.9v5z"/>
-          </svg>
-          <span>LinkedIn</span>
-        </a>
-        <!-- Email -->
-        <a href="mailto:daniel.nti.boakye@gmail.com" target="_blank" class="contact-link email">
-          <svg aria-hidden="true" viewBox="0 0 512 512" width="24" height="24">
-            <path fill="currentColor" d="M467 61H45C20.24 61 0 81.24 0 106v300c0 24.76 20.24 45 45 45h422c24.76 0 45-20.24 45-45V106c0-24.76-20.24-45-45-45zm0 30l-211 181.63L45 91h422zM45 421V121l207.47 178.59a15 15 0 0 0 19.07 0L467 121v300H45z"/>
-          </svg>
-          <span>Email</span>
-        </a>
-      </div>
-    </div>
-  </section>
+// Modal logic
+const modal = document.getElementById('modal');
+const modalContent = document.getElementById('modalContent');
+let lastFocused;
 
-  <!-- Footer -->
-  <footer class="footer-content">
-    © 2025 Daniel Nti Boakye. Made with Passion. <!-- Removed Tailwind ref -->
-  </footer>
+document.querySelectorAll('[data-project]').forEach(btn => {
+  btn.addEventListener('click', () => openModal(btn.dataset.project));
+  btn.addEventListener('keydown', e => { if(e.key==='Enter') openModal(btn.dataset.project); });
+});
 
-  <script>
-    // Basic mobile nav toggle
-    const navToggle = document.querySelector('.nav-toggle');
-    const navLinks = document.querySelector('.nav-links');
+document.getElementById('closeModal').addEventListener('click', closeModal);
+window.addEventListener('keydown', e => { if(e.key==='Escape') closeModal(); });
 
-    navToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-      navToggle.classList.toggle('active'); 
-    });
+function openModal(project){
+  lastFocused = document.activeElement;
+  modal.classList.remove('hidden');
+  modalContent.innerHTML = buildContent(project);
+  modal.classList.add('flex');
+  modal.querySelector('video')?.play();
+  trapFocus(modal);
+}
+function closeModal(){
+  modal.classList.add('hidden');
+  modal.classList.remove('flex');
+  modalContent.innerHTML = '';
+  lastFocused?.focus();
+}
+function buildContent(p){
+  switch(p){
+    case 'chatbot':
+      return `<video controls class='w-full' src='project-demos/chatbot.mkv'></video>
+        <h3 class='text-xl font-semibold mt-4'>Local AI Chatbot</h3>
+        <ul class='list-disc pl-5 text-sm space-y-1'>
+          <li>Offline LangChain RAG pipeline</li>
+          <li>Dockerised on Kubernetes</li>
+          <li>Cut support responses by 50%</li>
+        </ul>`;
+    case 'fibre':
+      return `<video controls class='w-full' src='project-demos/Demo - AI Fiber Planner.mp4'></video>
+        <h3 class='text-xl font-semibold mt-4'>Fibre Planner AI</h3>
+        <ul class='list-disc pl-5 text-sm space-y-1'>
+          <li>AI layout optimisation</li>
+          <li>QGIS integration</li>
+          <li>Infrastructure via Terraform</li>
+        </ul>`;
+    case 'scripter':
+      return `<video controls class='w-full' src='project-demos/Demo - Scripter App - Made with Clipchamp.mp4'></video>
+        <h3 class='text-xl font-semibold mt-4'>Scripter App</h3>
+        <ul class='list-disc pl-5 text-sm space-y-1'>
+          <li>Flutter cross-platform build</li>
+          <li>Offline editing support</li>
+          <li>Early release on Firebase</li>
+        </ul>`;
+    case 'crossposter':
+      return `<div class='w-full flex items-center justify-center text-8xl py-10'>✍️</div>
+        <h3 class='text-xl font-semibold mt-4'>Cross-Poster Platform</h3>
+        <ul class='list-disc pl-5 text-sm space-y-1'>
+          <li>React + Node.js stack</li>
+          <li>Unified publishing workflow</li>
+          <li>Boosted author reach</li>
+        </ul>`;
+    case 'offline':
+      return `<div class='w-full flex items-center justify-center text-8xl py-10'>📚</div>
+        <h3 class='text-xl font-semibold mt-4'>Offline KB LLM</h3>
+        <ul class='list-disc pl-5 text-sm space-y-1'>
+          <li>Local knowledge retrieval</li>
+          <li>LangChain pipelines</li>
+          <li>Runs on modest hardware</li>
+        </ul>`;
+  }
+}
 
-    // Close nav when a link is clicked (for single-page apps)
-    document.querySelectorAll('.nav-links a').forEach(link => {
-      link.addEventListener('click', () => {
-        navLinks.classList.remove('active');
-        navToggle.classList.remove('active');
-      });
-    });
-
-    // Add smooth scrolling
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href');
-            const targetElement = document.querySelector(targetId);
-            if (targetElement) {
-                // Calculate position considering potential fixed navbar height
-                const navbarHeight = document.querySelector('.navbar')?.offsetHeight || 0;
-                const elementPosition = targetElement.getBoundingClientRect().top;
-                const offsetPosition = elementPosition + window.pageYOffset - navbarHeight;
-
-                window.scrollTo({
-                    top: offsetPosition,
-                    behavior: "smooth"
-                });
-            }
-        });
-    });
-
-    // Optional: Add shadow to navbar on scroll
-    const navbar = document.querySelector('.navbar');
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 50) {
-        navbar.classList.add('scrolled');
-      } else {
-        navbar.classList.remove('scrolled');
+function trapFocus(el){
+  const focusable = el.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
+  const first = focusable[0];
+  const last = focusable[focusable.length -1];
+  el.addEventListener('keydown', trap);
+  first.focus();
+  function trap(e){
+    if(e.key==='Tab'){
+      if(e.shiftKey){
+        if(document.activeElement===first){ e.preventDefault(); last.focus(); }
+      }else{
+        if(document.activeElement===last){ e.preventDefault(); first.focus(); }
       }
-    });
-
-  </script>
+    }
+  }
+}
+</script>
 
 </body>
 </html>
