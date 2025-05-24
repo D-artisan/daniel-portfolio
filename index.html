@@ -386,7 +386,7 @@
     <!-- Inline JavaScript -->
     <script>
         // <!-- MAJOR SECTION: Global Data & Configuration -->
-        const availableDemoVideos = ['ai-fiber-planner.mp4', 'chatbot .mp4', 'one-stop-writer.mp4', 'scripter-app.mp4']; // Corrected 'chatbot.mp4' to 'chatbot .mp4'
+        const availableDemoVideos = ['ai-fiber-planner.mp4', 'chatbot.mp4', 'one-stop-writer.mp4', 'scripter-app.mp4']; // Reflects actual filename 'chatbot .mp4'
         const videoDirectory = 'project-demos/';
 
         function findVideoPath(videoKey, availableVideoFiles, directory) {
@@ -410,7 +410,7 @@
           {
             slug: 'local-ai-chatbot',
             title: 'Local AI Chatbot',
-            videoKey: 'chatbot',
+            videoKey: 'chatbot .mp4', // Corrected to match actual filename 'chatbot .mp4'
             thumbnailEmoji: '🤖',
             category: 'AI / Machine Learning',
             description: 'A privacy-focused conversational AI assistant that runs locally, leveraging Retrieval Augmented Generation (RAG) for contextual understanding from local documents. Ensures data sovereignty and offline capabilities.',
@@ -436,7 +436,7 @@
           {
             slug: 'fibre-planner-ai',
             title: 'AI Fibre Planner',
-            videoKey: 'ai-fiber-planner',
+            videoKey: 'ai-fiber-planner.mp4', // Changed from 'ai-fiber-planner'
             thumbnailEmoji: '🗺️',
             category: 'AI / Cloud Solutions',
             description: 'An intelligent tool utilizing AI and geospatial analysis to optimize the planning and layout of fibre optic networks. Significantly reduces manual effort and improves design efficiency for telecommunication infrastructure.',
@@ -461,7 +461,7 @@
           {
             slug: 'scripter-flutter',
             title: 'Scripter Mobile App',
-            videoKey: 'scripter-app',
+            videoKey: 'scripter-app.mp4', // Changed from 'scripter-app'
             thumbnailEmoji: '📱',
             category: 'Mobile Development',
             description: 'A cross-platform mobile application for scriptwriters, designed to streamline the creative process with features like industry-standard auto-formatting, character management, and cloud synchronization. Built with Flutter.',
@@ -487,7 +487,7 @@
           {
             slug: 'cross-poster-platform',
             title: 'Cross-Poster Platform',
-            videoKey: 'one-stop-writer',
+            videoKey: 'one-stop-writer.mp4', // Changed from 'one-stop-writer'
             thumbnailEmoji: '✍️',
             category: 'Web Platform / DevOps',
             description: 'A web-based platform enabling users to write content once and distribute it seamlessly across multiple social media channels and blogging platforms. Features content scheduling and basic engagement analytics.',
@@ -516,7 +516,7 @@
             thumbnailEmoji: '📚',
             category: 'AI / Enterprise Solutions',
             description: 'A secure, offline Large Language Model (LLM) solution for querying internal knowledge bases and documents. Ideal for organizations with stringent data privacy requirements, utilizing LangChain and local vector stores.',
-            businessOutcome: 'Enables powerful natural language search and information retrieval over private, sensitive documents without data ever leaving the organization\\\'s premises.',
+            businessOutcome: 'Enables powerful natural language search and information retrieval over private, sensitive documents without data ever leaving the organization\'s premises.',
             achievements: [
               'Built using LangChain, sentence transformers, and a local vector database (e.g., FAISS/Chroma) for efficient, offline semantic search capabilities.',
               'Infrastructure defined and managed using Terraform for reproducible and version-controlled deployments in various environments.',
@@ -532,6 +532,38 @@
               "codeRepository": "YOUR_GITHUB_REPO_URL/offline-kb-llm", // TODO: Add actual GitHub repository URL
               "programmingLanguage": ["Python", "HCL (Terraform)"],
               "keywords": ["LLM", "Offline AI", "Knowledge Base", "LangChain", "Terraform", "RAG", "Enterprise AI", "Data Privacy"]
+            }
+          },
+          {
+            slug: 'other-projects-volunteering',
+            title: 'Other Projects & Volunteering',
+            videoKey: null,
+            thumbnailEmoji: '📁',
+            category: 'Portfolio Highlights',
+            description: 'A curated list of other impactful projects and significant volunteering contributions, highlighting diverse skills and a commitment to community and innovation. Click to learn more.',
+            achievements: [
+              "<strong>Infrastructure as Code:</strong> Automated AWS provisioning with CloudFormation, ensuring scalable and consistent environments.",
+              "<strong>CI/CD Automation:</strong> Built deployment pipelines with Ansible & CircleCI, integrating comprehensive monitoring for operational stability.",
+              "<strong>Scalable Microservices:</strong> Deployed ML-driven services on Kubernetes with built-in resilience and autoscaling.",
+              "<strong>AI Chatbot (Google Cloud):</strong> Created a chatbot using Google Cloud\\'s Agent Builder for intelligent query handling and automation.",
+              "<strong>Social Navigation Metric (Robotics):</strong> Developed a metric for autonomous robots to make decisions in human-aware environments.",
+              "<strong>Community Engagement (ALX Africa):</strong> Led a cloud computing careers webinar for ALX Africa\\'s Meet Webinar Series, offering practical insights into the field."
+            ],
+            techStack: ['AWS CloudFormation', 'Ansible', 'CircleCI', 'Kubernetes', 'Google Cloud Agent Builder', 'Python', 'Robotics Algorithms', 'Public Speaking', 'Mentorship'],
+            ogImage: 'YOUR_OG_IMAGE_FOR_OTHER_PROJECTS.jpg', // TODO: Create and provide URL for a specific OG image
+            jsonLd: {
+              "@context": "https://schema.org",
+              "@type": "ItemList",
+              "name": "Other Projects & Volunteering",
+              "description": "A summary of additional projects and volunteering activities.",
+              "itemListElement": [
+                { "@type": "ListItem", "position": 1, "item": { "@type": "CreativeWork", "name": "Infrastructure as Code Project", "description": "Automated AWS provisioning with CloudFormation." } },
+                { "@type": "ListItem", "position": 2, "item": { "@type": "CreativeWork", "name": "CI/CD Automation Project", "description": "Deployment pipelines with Ansible & CircleCI." } },
+                { "@type": "ListItem", "position": 3, "item": { "@type": "CreativeWork", "name": "Scalable Microservices Project", "description": "ML-driven services on Kubernetes." } },
+                { "@type": "ListItem", "position": 4, "item": { "@type": "CreativeWork", "name": "AI Chatbot (Google Cloud)", "description": "Chatbot using Google Cloud\\'s Agent Builder." } },
+                { "@type": "ListItem", "position": 5, "item": { "@type": "CreativeWork", "name": "Social Navigation Metric (Robotics)", "description": "Metric for autonomous robots in human-aware environments." } },
+                { "@type": "ListItem", "position": 6, "item": { "@type": "Event", "name": "Community Engagement (ALX Africa Webinar)", "description": "Led cloud computing careers webinar." } }
+              ]
             }
           }
         ].map(project => ({ ...project, video: findVideoPath(project.videoKey, availableDemoVideos, videoDirectory) }));
@@ -796,12 +828,21 @@
                 }
             };
 
-            if (projectsGridElement) {
-                projectsData.forEach(createProjectCard);
-            } else {
-                console.error("Projects grid container not found.");
+            // <!-- MAJOR SECTION: Initialization -->
+            function initApp() {
+                if (currentYearSpan) {
+                    currentYearSpan.textContent = new Date().getFullYear();
+                }
+
+                if (projectsGridElement) {
+                    projectsData.forEach(createProjectCard);
+                } else {
+                    console.error('Project grid element not found. Cannot render project cards.');
+                }
             }
-            // <!-- END MAJOR SECTION: Dynamic Content Generation -->
+
+            initApp();
+            // <!-- END MAJOR SECTION: Initialization -->
 
             // <!-- MAJOR SECTION: Event Listeners & Utilities -->
             closeModalButtonElement.addEventListener('click', closeModal);
@@ -828,8 +869,6 @@
                     });
                 });
             }
-            
-            if (currentYearSpan) currentYearSpan.textContent = new Date().getFullYear();
             // <!-- END MAJOR SECTION: Event Listeners & Utilities -->
 
             // <!-- TODOs ... -->
